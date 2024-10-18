@@ -198,7 +198,7 @@ section .card-item {
   width: 90%;
   padding: 15px 0px;
   border: none;
-  background: var(--blue);
+  background: white;
   border-radius: 4px;
   color: white;
   font-weight: bold;
@@ -209,8 +209,8 @@ section .card-item {
 }
 
 .card-item button:hover {
-  background: #dedede;
-  color: var(--blue);
+  background: white;
+  color: black;
 }
 
 /* About */
@@ -228,7 +228,7 @@ section .card-item {
   max-width: 1000px;
   min-width: 300px;
   height: 600px;
-  background: #dedede3b;
+  background: white;
   margin: 0 auto;
   border-radius: 8px;
   z-index: 10;
@@ -268,14 +268,14 @@ section .card-item {
   font-size: 1em;
   letter-spacing: 2px;
   text-align: right;
-  color: rgba(0, 0, 0, 0.4);
+  color: black;
 }
 
 /* Features */
 .features {
   width: 100%;
   height: 100%;
-  background: var(--gray);
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -307,7 +307,7 @@ section .card-item {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid #dedede3b;
+  border: 1px solid white;
   border-radius: 4px;
 }
 
@@ -380,19 +380,6 @@ footer .last {
     display: none;
   }
 
-  .header-block img {
-    width: 70%;
-    position: absolute;
-    right: 16%;
-    top: 30%;
-  }
-
-  .header-block .text {
-    position: absolute;
-    bottom: 10%;
-    left: 15;
-  }
-
   section .filter-card {
     width: 390px;
     padding: 0px 10px;
@@ -431,17 +418,10 @@ footer .last {
     margin: 0px;
     text-align: left;
   }
-
-  .features {
-    height: 100%;
+  
+  .right massey {
+    max-width: 200px;
   }
-
-  .feature-card-block {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
   footer {
     height: 100%;
   }
@@ -453,5 +433,19 @@ footer .last {
   .footer-links {
     flex-direction: column;
     padding-left: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .left {
+    display: none; 
+  }
+  
+  .right {
+    width: 90%; 
+  }
+  .right img {
+    max-width: 200px; 
+    margin: 0 auto; 
   }
 }
